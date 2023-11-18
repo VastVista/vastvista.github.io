@@ -1580,6 +1580,13 @@ a {
 a:hover {
   color: #49b1f5;
 }
+#site-title,
+#site-subtitle,
+.site-name,
+#aside-content .author-info__name,
+#aside-content .author-info__description {
+  font-family: Font2;
+}
 .is-center {
   text-align: center;
 }
@@ -1648,7 +1655,7 @@ blockquote > :last-child {
 #article-container pre,
 #article-container code {
   font-size: var(--global-font-size);
-  font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
+  font-family: Font1 !important;
 }
 #article-container code {
   padding: 2px 4px;
