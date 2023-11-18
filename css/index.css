@@ -1648,7 +1648,7 @@ blockquote > :last-child {
 #article-container pre,
 #article-container code {
   font-size: var(--global-font-size);
-  font-family: Font1 !important;
+  font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', sans-serif !important;
 }
 #article-container code {
   padding: 2px 4px;
