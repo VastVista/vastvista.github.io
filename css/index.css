@@ -1897,7 +1897,7 @@ pre[class*='language-'] pre > code.highlight {
 }
 #article-container code {
   padding: 2px 4px;
-  background: rgba(27,31,35,0.05);
+  background: rgba(255,250,240,0.5);
   color: #f47466;
 }
 #article-container pre {
@@ -5982,7 +5982,7 @@ blockquote.pullquote.right {
   box-shadow: none;
 }
 [data-theme='dark'] #article-container .note code {
-  background: rgba(27,31,35,0.05);
+  background: rgba(255,250,240,0.5);
 }
 [data-theme='dark'] #article-container .aplayer {
   filter: brightness(0.8);
