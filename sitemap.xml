@@ -167,6 +167,13 @@
   </url>
   
   <url>
+    <loc>https://vamos0718.github.io/tags/%E9%92%A2%E9%93%81%E6%98%AF%E6%80%8E%E6%A0%B7%E7%82%BC%E6%88%90%E7%9A%84/</loc>
+    <lastmod>2023-12-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://vamos0718.github.io/tags/%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2023-12-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -175,13 +182,6 @@
   
   <url>
     <loc>https://vamos0718.github.io/tags/%E5%8D%95%E8%AF%8D/</loc>
-    <lastmod>2023-12-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://vamos0718.github.io/tags/%E9%92%A2%E9%93%81%E6%98%AF%E6%80%8E%E6%A0%B7%E7%82%BC%E6%88%90%E7%9A%84/</loc>
     <lastmod>2023-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -211,14 +211,14 @@
   </url>
   
   <url>
-    <loc>https://vamos0718.github.io/categories/2-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2-1-C/</loc>
+    <loc>https://vamos0718.github.io/categories/2-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2-2-%E8%8B%B1%E8%AF%AD/</loc>
     <lastmod>2023-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://vamos0718.github.io/categories/2-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2-2-%E8%8B%B1%E8%AF%AD/</loc>
+    <loc>https://vamos0718.github.io/categories/2-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/2-1-C/</loc>
     <lastmod>2023-12-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
