@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Headers Should Not Include using Declarations</title>
+      <link href="/posts/c7c7d983.html"/>
+      <url>/posts/c7c7d983.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Headers-Should-Not-Include-using-Declarations"><a href="#Headers-Should-Not-Include-using-Declarations" class="headerlink" title="Headers Should Not Include using Declarations"></a>Headers Should Not Include using Declarations</h1><p>To use namespace members easily,language inducts the <strong>using declaration</strong>.A using declaration has the form:  <em>using namespace:: name;</em> But about headers,if one header includes the using declaration,then every program which include the header all will get the same using declaration,which would make the program that didn’t intend to use the specified library name encounter unexpected name conflicts.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 2.Study Notes </category>
+          
+          <category> 2.1.C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Header </tag>
+            
+            <tag> Namespace </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/posts/4a17b156.html"/>
       <url>/posts/4a17b156.html</url>
