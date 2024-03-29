@@ -4,11 +4,94 @@
   
     
     <entry>
+      <title>C++ Versions of C Library Headers</title>
+      <link href="/posts/4ee8ee3c.html"/>
+      <url>/posts/4ee8ee3c.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="C-Versions-of-C-Library-Headers"><a href="#C-Versions-of-C-Library-Headers" class="headerlink" title="C++ Versions of C Library Headers"></a>C++ Versions of C Library Headers</h1><p>In addition to those facilities specifically defined for C++, C++ library incorporates the C library. Those C library named <em>name.h</em> are named differently in C++, which is <em>cname</em>. </p><p>Exclude the difference of the form of name, there is a more core difference which judges why C++ programmers should use the library name of C++, but not of C. That is, the name defined in <em>cname</em> headers are defined inside the <em>std</em> namespace, whereas those defined in the <em>name.h</em> versions are not.</p><p>So, using the <em>name.h</em> headers will put the extra burden on the programmer to remember which library names are inherited from C and whcih are unique to C++.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 2.Study </category>
+          
+          <category> 2.1.C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Header </tag>
+            
+            <tag> Namespace </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Range-Based for Statement</title>
+      <link href="/posts/b59a3782.html"/>
+      <url>/posts/b59a3782.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Range-Based-for-Statement"><a href="#Range-Based-for-Statement" class="headerlink" title="Range-Based for Statement"></a>Range-Based <em>for</em> Statement</h1><p>To access every element of a sequence, the best way is that using <strong>range for</strong> statement, the syntactic form is as follows.</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(declaration: expression)</span><br><span class="line">    statement</span><br></pre></td></tr></table></figure><p>Let’s explain the part one by one, <em>expression</em> is an object of a type that represents a sequence, and <em>declaration</em> defines a variable to access every element in the sequence. On each iteration, the variable initialized by the value of the next element in the sequence. The <em>statement</em> makes us could perform some operation on the variable which initialized from the sequence.</p><p>As we know, the <em>string</em> type represents a sequence of character, so we can use a <em>string</em> object as the <em>expression</em> to be printed in a range <em>for</em>.</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">string str=<span class="string">&quot;Henan&quot;</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span> c: str)</span><br><span class="line">    cout&lt;&lt;c&lt;&lt;endl;<span class="comment">//print the current character followed by a newline</span></span><br></pre></td></tr></table></figure><p>In the <em>declaration</em>, we can define a reference which binds to <em>char</em> type, in this way, we could operate the element of the sequence indirectly. Such as, by the library <em>toupper</em> function which takes a character and returns the uppercase version of that character, we could convert a <em>string</em> to all uppercase letters.</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">string <span class="title">s</span><span class="params">(<span class="string">&quot;Hello&quot;</span>)</span></span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">auto</span>&amp; c: s)</span><br><span class="line">    c=<span class="built_in">toupper</span>(s);</span><br><span class="line">cout&lt;&lt;s&lt;&lt;endl;<span class="comment">//the output of this code is HELLO</span></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 2.Study Notes </category>
+          
+          <category> 2.1.C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Statement </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Some Notes About Strings</title>
+      <link href="/posts/14c6fac6.html"/>
+      <url>/posts/14c6fac6.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="Some-Notes-About-strings"><a href="#Some-Notes-About-strings" class="headerlink" title="Some Notes About strings"></a>Some Notes About <em>strings</em></h1><h2 id="Defining-and-Initializing-strings"><a href="#Defining-and-Initializing-strings" class="headerlink" title="Defining and Initializing strings"></a>Defining and Initializing <em>strings</em></h2><p>There is one way to initialize <em>strings</em> that i didn’t know before: </p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">string <span class="title">s1</span><span class="params">(n,<span class="string">&#x27;c&#x27;</span>)</span></span>;</span><br></pre></td></tr></table></figure><p> It means that initialize <em>s1</em> with n copies of character ‘c’, then <em>s1</em> will hold these data “cccccccccc”.</p><h2 id="Operations-on-strings"><a href="#Operations-on-strings" class="headerlink" title="Operations on strings"></a>Operations on <em>strings</em></h2><p>The library defines much operations <em>strings</em> can perform, the same there is still some forms i’m not familiar,like these.</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string s;</span><br><span class="line"><span class="built_in">getline</span>(istream,s);<span class="comment">//reads a line of input from istream into s. Return istream, that is, this function could do chain input. </span></span><br><span class="line">s[n];<span class="comment">//returns a reference to the char at position n in s;positions start at 0.</span></span><br><span class="line">s.<span class="built_in">empty</span>();</span><br><span class="line">s.<span class="built_in">size</span>();</span><br></pre></td></tr></table></figure><h2 id="Reading-an-Unknown-Number-of-strings"><a href="#Reading-an-Unknown-Number-of-strings" class="headerlink" title="Reading an Unknown Number of strings"></a>Reading an Unknown Number of <em>strings</em></h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">string s;</span><br><span class="line"><span class="keyword">while</span>(cin&gt;&gt;s)&#123;<span class="comment">//returns cin,chained inputs.</span></span><br><span class="line">        cout&lt;&lt;s&lt;&lt;endl;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>This program reads until end-of-file (or invalid input) which used by tapping keyword Ctrl+Z together,then program falls out of the <em>while</em>.</p><h2 id="Adding-Literals-and-strings"><a href="#Adding-Literals-and-strings" class="headerlink" title="Adding Literals and strings"></a>Adding Literals and <em>strings</em></h2><p>By type conversion, we can instead <em>strings</em> type with the given type that could convert its type to <em>strings</em> (e.g., character literals and character string literals). When we use <em>+ operator</em> as follows, there are constraints while we mix <em>strings</em> and string or character literals.</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">string s=<span class="string">&quot;hello&quot;</span>;</span><br><span class="line">string s1=s+ <span class="string">&quot;,&quot;</span>;<span class="comment">//ok</span></span><br><span class="line">string s2=<span class="string">&quot;hello&quot;</span>+ <span class="string">&quot;,&quot;</span>;<span class="comment">//error</span></span><br><span class="line">string s3=s+ <span class="string">&quot;,&quot;</span>+ <span class="string">&quot;world&quot;</span>;<span class="comment">//ok</span></span><br><span class="line">string s4=<span class="string">&quot;hello&quot;</span>+ <span class="string">&quot;,&quot;</span>+ s;<span class="comment">//error</span></span><br></pre></td></tr></table></figure><p>In the above case, we need to promise at least one operand side the <em>+ operator</em> is <em>strings</em> type.  About the initalization of s3, it could group as</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">string s3=(s+ <span class="string">&quot;,&quot;</span>)+ <span class="string">&quot;world&quot;</span>;</span><br></pre></td></tr></table></figure><p>The subexpression <em>s+ “,”</em> returns a <em>strings</em>, which forms the left-hand operand of the second + operator. So the initalization of s3 and s1 is legal. For the same reasons, the initalization of s4 and s2 is illegal.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 2.Study Notes </category>
+          
+          <category> 2.1.C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> strings </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Headers Should Not Include using Declarations</title>
       <link href="/posts/c7c7d983.html"/>
       <url>/posts/c7c7d983.html</url>
       
-        <content type="html"><![CDATA[<h1 id="Headers-Should-Not-Include-using-Declarations"><a href="#Headers-Should-Not-Include-using-Declarations" class="headerlink" title="Headers Should Not Include using Declarations"></a>Headers Should Not Include using Declarations</h1><p>To use namespace members easily,language inducts the <strong>using declaration</strong>.A using declaration has the form:  <em>using namespace:: name;</em> But about headers,if one header includes the using declaration,then every program which include the header all will get the same using declaration,which would make the program that didn’t intend to use the specified library name encounter unexpected name conflicts.</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Headers-Should-Not-Include-using-Declarations"><a href="#Headers-Should-Not-Include-using-Declarations" class="headerlink" title="Headers Should Not Include using Declarations"></a>Headers Should Not Include <em>using</em> Declarations</h1><p>To use namespace members easily,language inducts the <strong>using declaration</strong>.A <em>using</em> declaration has the form:  </p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span>:: name;</span><br></pre></td></tr></table></figure><p>But about headers,if one header includes the <em>using</em> declaration,then every program which include the header all will get the same <em>using</em> declaration,which would make the program that didn’t intend to use the specified library name encounter unexpected name conflicts.</p>]]></content>
       
       
       <categories>
@@ -25,6 +108,8 @@
             <tag> Header </tag>
             
             <tag> Namespace </tag>
+            
+            <tag> Statement </tag>
             
         </tags>
       
