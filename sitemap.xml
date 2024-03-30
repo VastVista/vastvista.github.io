@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vastvista.github.io/link/index.html</loc>
+    
+    <lastmod>2024-03-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vastvista.github.io/posts/cd937a95.html</loc>
     
     <lastmod>2024-03-30</lastmod>
@@ -50,15 +59,6 @@
     <loc>https://vastvista.github.io/posts/4ee8ee3c.html</loc>
     
     <lastmod>2024-03-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vastvista.github.io/link/index.html</loc>
-    
-    <lastmod>2024-03-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -154,14 +154,14 @@
   </url>
   
   <url>
-    <loc>https://vastvista.github.io/categories/2-Study-Note/2-2-Data-Structure/</loc>
+    <loc>https://vastvista.github.io/categories/2-Study-Note/2-1-C/</loc>
     <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://vastvista.github.io/categories/2-Study-Note/2-1-C/</loc>
+    <loc>https://vastvista.github.io/categories/2-Study-Note/2-2-Data-Structure/</loc>
     <lastmod>2024-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
