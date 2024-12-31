@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vastvista.github.io/posts/e7a24bc5.html</loc>
+    
+    <lastmod>2024-12-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vastvista.github.io/posts/90a57b53.html</loc>
     
-    <lastmod>2024-12-29</lastmod>
+    <lastmod>2024-12-31</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -238,7 +247,7 @@
 
   <url>
     <loc>https://vastvista.github.io/</loc>
-    <lastmod>2024-12-30</lastmod>
+    <lastmod>2024-12-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -246,7 +255,14 @@
   
   <url>
     <loc>https://vastvista.github.io/tags/A1/</loc>
-    <lastmod>2024-12-30</lastmod>
+    <lastmod>2024-12-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://vastvista.github.io/tags/A2/</loc>
+    <lastmod>2024-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -255,14 +271,14 @@
   
   <url>
     <loc>https://vastvista.github.io/categories/1-Deutsch/</loc>
-    <lastmod>2024-12-30</lastmod>
+    <lastmod>2024-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vastvista.github.io/categories/1-Deutsch/1-1-Nicos-Weg/</loc>
-    <lastmod>2024-12-30</lastmod>
+    <lastmod>2024-12-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
